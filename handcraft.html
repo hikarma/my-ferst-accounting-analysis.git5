@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рукоделие - Творческие хобби</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Та же шапка, как в index.html -->
+    </header>
+
+    <main class="container">
+        <section class="category-header">
+            <div class="category-info">
+                <h1><i class="fas fa-cut"></i> Рукоделие</h1>
+                <p>Идеи, мастер-классы и новости из мира рукоделия</p>
+            </div>
+            <div class="category-tags" id="handcraftTags">
+                <!-- Теги будут загружены через JS -->
+            </div>
+        </section>
+
+        <section class="category-content">
+            <div class="filter-panel">
+                <div class="filter-group">
+                    <label for="sortHandcraft">Сортировка:</label>
+                    <select id="sortHandcraft">
+                        <option value="newest">Сначала новые</option>
+                        <option value="popular">Сначала популярные</option>
+                        <option value="commented">Самые обсуждаемые</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="filterHandcraftTags">Фильтр по тегам:</label>
+                    <select id="filterHandcraftTags">
+                        <option value="">Все теги</option>
+                        <!-- Теги будут загружены через JS -->
+                    </select>
+                </div>
+            </div>
+
+            <div class="articles-container" id="handcraftArticles">
+                <!-- Статьи будут загружены через JS -->
+            </div>
+
+            <div class="pagination" id="handcraftPagination">
+                <!-- Пагинация будет загружена через JS -->
+            </div>
+        </section>
+
+        <section class="category-sidebar">
+            <div class="sidebar-widget">
+                <h3>Популярные материалы</h3>
+                <div class="popular-articles" id="popularHandcraftArticles">
+                    <!-- Будет загружено через JS -->
+                </div>
+            </div>
+            
+            <div class="sidebar-widget">
+                <h3>Мастер-классы</h3>
+                <div class="workshops-list" id="handcraftWorkshops">
+                    <!-- Будет загружено через JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Такой же футер, как в index.html -->
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="category.js"></script>
+</body>
+</html>
